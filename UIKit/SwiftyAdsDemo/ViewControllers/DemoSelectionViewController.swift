@@ -76,7 +76,7 @@ final class DemoSelectionViewController: UITableViewController {
     // MARK: - Properties
 
     private let swiftyAds: SwiftyAdsType
-    private let geography: UMPDebugGeography
+    private let geography: DebugGeography
     private let sections = Section.allCases
     private let notificationCenter: NotificationCenter = .default
     private var bannerAd: SwiftyAdsBannerAd?
@@ -88,7 +88,7 @@ final class DemoSelectionViewController: UITableViewController {
 
     // MARK: - Initialization
     
-    init(swiftyAds: SwiftyAdsType, geography: UMPDebugGeography) {
+    init(swiftyAds: SwiftyAdsType, geography: DebugGeography) {
         self.swiftyAds = swiftyAds
         self.geography = geography
         super.init(style: .insetGrouped)

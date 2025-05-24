@@ -49,7 +49,7 @@ private extension AppDelegate {
         }
     }
     
-    func configureSwiftyAds(from viewController: UIViewController, geography: UMPDebugGeography) {
+    func configureSwiftyAds(from viewController: UIViewController, geography: DebugGeography) {
         #if DEBUG
         swiftyAds.enableDebug(
             testDeviceIdentifiers: [],
@@ -72,7 +72,7 @@ private extension AppDelegate {
 }
 
 private extension ConsentSelectionViewController.Row {
-    var umpDebugGeography: UMPDebugGeography {
+    var umpDebugGeography: DebugGeography {
         switch self {
         case .EEA:
             return .EEA
